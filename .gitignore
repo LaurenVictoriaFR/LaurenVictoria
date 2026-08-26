@@ -22,3 +22,11 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# staging assets kept only locally — real copies used by the site live in public/
+/Curriculo_Lauren.pdf
+/Prints/
+/abba-dancing-queen_abba-dancing-queen.mp3
+/abbalabumcover.webp
+/linkinparkcover.jpg
+/Linkin Park - Waiting for the end.mp3
