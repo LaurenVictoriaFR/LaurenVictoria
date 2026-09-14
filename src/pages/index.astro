@@ -275,9 +275,7 @@ const playlist = [
 			.section-head h2 { font-size: clamp(1.7rem, 3.2vw, 2.15rem); }
 			.section-head .count { font-family: "IBM Plex Mono", monospace; font-size: 0.8rem; color: var(--ink-faint); }
 
-			.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
-			.card-stack { display: flex; flex-direction: column; gap: 1.25rem; }
-			.card-stack .card { flex: 1; }
+			.projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; align-items: start; }
 			.card {
 				background: var(--surface-raised); border: 1px solid var(--line); border-radius: 5px;
 				padding: 1.6rem; display: flex; flex-direction: column; gap: 0.9rem;
@@ -725,33 +723,6 @@ const playlist = [
 								<span class="card-link is-pending">repositório em breve</span>
 							</article>
 
-							<div class="card-stack">
-								<article class="card">
-									<span class="card-vol">Vol. III</span>
-									<span class="card-path">em andamento · projeto em grupo</span>
-									<h3>App de Adesão ao Tratamento</h3>
-									<p>Aplicativo para ajudar pacientes a manterem a rotina de medicação em dia, tomando os remédios no horário certo. Projeto da disciplina de Engenharia de Software, ainda na fase inicial — por enquanto só temos o tema definido. Vou atualizando este card conforme o time avança.</p>
-									<span class="card-link is-pending">repositório em breve</span>
-								</article>
-
-								<article class="card">
-									<span class="card-vol">Vol. IV</span>
-									<span class="card-path">projeto em grupo</span>
-									<h3>Cordel + 1</h3>
-									<p>Compilador para uma linguagem de programação criada pela professora da disciplina, cobrindo análise léxica, sintática e semântica.</p>
-									<ul class="tags"><li>Java</li></ul>
-									<a class="card-link" href="https://github.com/LarissaBatista19/cordel-mais-um-compilador">ver repositório →</a>
-								</article>
-
-								<article class="card">
-									<span class="card-vol">Vol. V</span>
-									<span class="card-path">em andamento · projeto em grupo</span>
-									<h3>Atividade 1 de SO — IA Local com Ollama</h3>
-									<p>Atividade da disciplina de Sistemas Operacionais: rodar e avaliar modelos de linguagem localmente com Ollama (llama3.2:3b) via WSL2. Sou responsável pelas seções 3 e 6 do relatório do grupo.</p>
-									<span class="card-link is-pending">repositório em breve</span>
-								</article>
-							</div>
-
 							<article class="card">
 								<div class="gallery" role="group" aria-label="Captura de tela do Fichário">
 									<div class="gallery-track">
@@ -761,12 +732,37 @@ const playlist = [
 									<button type="button" class="gallery-nav gallery-next" aria-label="Próxima foto"><span class="gallery-nav-arrow"></span></button>
 									<span class="gallery-count" aria-hidden="true">1 / 1</span>
 								</div>
-								<span class="card-vol">Vol. VI</span>
+								<span class="card-vol">Vol. III</span>
 								<span class="card-path">projeto pessoal</span>
 								<h3>Fichário — Kanban Pessoal</h3>
 								<p>Quadro de tarefas com a mesma identidade visual deste portfólio: colunas A Fazer, Em Andamento e Concluído, prazos calculados automaticamente ("vence amanhã", "venceu há 2 dias") e arquivamento das fichas concluídas há mais de uma semana. Sincroniza em tempo real entre dispositivos via Firebase (Firestore + login com Google).</p>
 								<ul class="tags"><li>JavaScript</li><li>Firebase</li><li>Firestore</li><li>Google Auth</li></ul>
 								<a class="card-link" href="https://github.com/LaurenVictoriaFR/fichario">ver repositório →</a>
+							</article>
+
+							<article class="card">
+								<span class="card-vol">Vol. IV</span>
+								<span class="card-path">em andamento · projeto em grupo</span>
+								<h3>App de Adesão ao Tratamento</h3>
+								<p>Aplicativo para ajudar pacientes a manterem a rotina de medicação em dia, tomando os remédios no horário certo. Projeto da disciplina de Engenharia de Software, ainda na fase inicial — por enquanto só temos o tema definido. Vou atualizando este card conforme o time avança.</p>
+								<span class="card-link is-pending">repositório em breve</span>
+							</article>
+
+							<article class="card">
+								<span class="card-vol">Vol. V</span>
+								<span class="card-path">projeto em grupo</span>
+								<h3>Cordel + 1</h3>
+								<p>Compilador para uma linguagem de programação criada pela professora da disciplina, cobrindo análise léxica, sintática e semântica.</p>
+								<ul class="tags"><li>Java</li></ul>
+								<a class="card-link" href="https://github.com/LarissaBatista19/cordel-mais-um-compilador">ver repositório →</a>
+							</article>
+
+							<article class="card">
+								<span class="card-vol">Vol. VI</span>
+								<span class="card-path">em andamento · projeto em grupo</span>
+								<h3>Atividade 1 de SO — IA Local com Ollama</h3>
+								<p>Atividade da disciplina de Sistemas Operacionais: rodar e avaliar modelos de linguagem localmente com Ollama (llama3.2:3b) via WSL2. Sou responsável pelas seções 3 e 6 do relatório do grupo.</p>
+								<span class="card-link is-pending">repositório em breve</span>
 							</article>
 						</div>
 					</section>
